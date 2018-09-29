@@ -29,3 +29,10 @@ Player.prototype.hold= function () {
   // ===========this.turnover ();==============>
   alert(this.hisName + "Hey you, handover to the next player. Your turn is over!")
 }
+
+Player.prototype.newGame = function () {
+  this.roll = 0;
+  this.turnscore = 0;
+  this.totalscore = 0;
+  this.hisName = "";
+}
