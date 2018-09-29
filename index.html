@@ -3,15 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>DICE GAME</title>
-    <link rel="stylesheet" href="css/bootsrap.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </head>
-  <body background-image="image/image.jpg">
+  <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="panel panel-default">
             <div class="panel-heading">
               <h1 class="panel-title">Dice Game</h1>
@@ -20,63 +20,62 @@
               <h2>About this game.</h2>
               <p>Dice is an indoor game enjoyed by both adults and the young. They're generally fun. Let's try one out!</p>
 
-            <form id="player1">
+            <form id="ben">
               <div class="form-group">
-                <label for="player1">Player 1 Name</label>
-                <input type="text" required class="player1 form-control">
+                <label for="ben">Benson</label>
+                <input type="text" required class="ben form-control">
               </div>
             </form>
 
-            <form id="computer">
+            <form id="Jac">
               <div class="form-group">
-                <label for="computer">Computer</label>
-                <input type="text" required class="computer form-control">
+                <label for="Jac">Jackton</label>
+                <input type="text" required class="Jac form-control">
               </div>
             </form>
 
             <button id="start" class="btn-success btn">Start</button>
-
             <div class="panel-footer">
-              <p>Ready? 1,2,3,4 ...</p>
+              <p>Ready? 1..2...3....4 .. </p>
             </div>
-            </div>
-            </div>
-          </div>
 
-          <div class="container">
-            <div class="well">
-
-              <button id="new-game" class="btn-success btn">LET'S BEGIN</button>
-              <br>
-              <br>
-              <div class="row">
-                <div class="col-md-6">
-                  <h2>Player 1: <span id="player1"></span></h2>
-                    <button id="player1-roll" class="btn-danger btn">Roll</button>
-                    <button id="player1-pass" class="btn-danger btn">Pass</button>
-                    <br>
-                    <br>
-                  <h2>Roll Dice: <span id="roll-1"></span></h2>
-                  <p>Total rounds: <span id="total-round-1"></span> </p>
-                  <p>Total Score: <span id="total-score-1"></span></p>
-                </div>
-                <br>
-              <div class="col-md-6">
-                <h2>Computer: <span id="computer"></span></h2>
-                  <button id="computer-roll" class="btn-danger btn">Roll</button>
-                  <button id="computer-pass" class="btn-danger btn">Pass</button>
-                  <br>
-                  <br>
-                  <h2>Roll Dice: <span id="roll-2"></span></h2>
-                  <p>Total Round: <span id="total-round-2"></span></p>
-                  <p>Total Score: <span id="total-score-2"></span> </p>
-
-              </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
+
+      <div class="container">
+        <div class="well">
+          <button id="new-game" class="btn-success btn">LET'S BEGIN</button>
+          <br>
+          <br>
+            <div class="row">
+              <div class="col-md-6">
+                <h2>Benson: <span id="ben"></span></h2>
+                  <button id="ben-roll" class="btn-danger btn">Roll</button>
+                  <button id="ben-pass" class="btn-danger btn">Pass</button>
+                  <br>
+                  <br>
+                <h2>Roll Dice: <span id="roll-1"></span></h2>
+                <p>Total rounds: <span id="total-round-1"></span> </p>
+                <p>Total Score: <span id="total-score-1"></span></p>
+                  <br>
+                  <br>
+             </div>
+             <div class="col-md-6">
+                <h2>Jackton: <span id="Jac"></span></h2>
+                  <button id="Jac-roll" class="btn-danger btn">Roll</button>
+                  <button id="Jac-pass" class="btn-danger btn">Pass</button>
+                  <br>
+                  <br>
+                <h2>Roll Dice: <span id="roll-2"></span></h2>
+                <p>Total round: <span id="total-round-2"></span></p>
+                <p>Total Score: <span id="total-score-2"></span> </p>
+                </div>
+               </div>
+              </div>
+          </div>
+        </div>
+      </div>
   </body>
 </html>
