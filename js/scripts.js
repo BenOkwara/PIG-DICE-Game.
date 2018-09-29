@@ -41,3 +41,21 @@ var clearFields = function() {
   $(".ben").val("");
   $(".Jac").val("");
 }
+
+
+// ===========U I ==============>
+
+$(document).ready(function)() {
+  $("#start").click(function(event){
+    Benson = 1 Player (true);
+    Jackton = 2 Player (false);
+    $(".player-console").show();
+    // $(".start-board").hide();
+
+    player1.hisName = Benson;
+    player2.hisName = Jackton;
+
+    
+  })
+
+}
