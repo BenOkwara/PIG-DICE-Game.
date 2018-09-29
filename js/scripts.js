@@ -21,3 +21,11 @@ Player.prototype.rollonce= function() {
     this.turnscore += this.roll;
   }
 }
+
+Player.prototype.hold= function () {
+  this.totalscore += this.turnscore;
+  this.turnscore = 0;
+
+  // ===========this.turnover ();==============>
+  alert(this.hisName + "Hey you, handover to the next player. Your turn is over!")
+}
