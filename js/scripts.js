@@ -36,3 +36,8 @@ Player.prototype.newGame = function () {
   this.totalscore = 0;
   this.hisName = "";
 }
+
+var clearFields = function() {
+  $(".ben").val("");
+  $(".Jac").val("");
+}
