@@ -30,6 +30,12 @@ Player.prototype.Pass= function () {
   alert(this.hisName + "Hey you, handover to the next player. Your turn is over!")
 }
 
+Player.prototype.victor = function () {
+  if (this.totalscore >=45) {
+    alert(this.hisName + "BUMBA!! You the Winner!");
+  }
+}
+
 Player.prototype.newGame = function () {
   this.roll = 0;
   this.turnscore = 0;
