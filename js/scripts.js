@@ -4,7 +4,7 @@ var Jackton="";
 var playTime = function() {
   return Math.floor(Math.random() * 6) + 1;
 }
-function Player (turn, hisName) {
+function Player(turn, hisName) {
   this.roll = 0;
   this.turnscore = 0;
   this.totalscore = 0;
@@ -15,14 +15,14 @@ function Player (turn, hisName) {
 Player.prototype.rollonce= function() {
   if (this.roll === 1) {
     this.turnscore = 0;
-    alert("Oops!!" + this.hisName + ", I am Sorry but your score is 1, Start Again.")
+    alert("Oops!!" + this.hisName + ", I am Sorry but your score is 0, Start Again.")
 
   } else {
     this.turnscore += this.roll;
   }
 }
 
-Player.prototype.hold= function () {
+Player.prototype.Pass= function () {
   this.totalscore += this.turnscore;
   this.turnscore = 0;
 
