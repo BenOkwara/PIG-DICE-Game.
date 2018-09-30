@@ -51,7 +51,7 @@ var clearFields = function() {
 
 // ===========U I ==============>
 
-$(document).ready(function)() {
+$(document).ready(function() {
   $("#start").click(function(event){
     Benson = Player (true);
     Jackton = Player (false);
