@@ -53,8 +53,8 @@ var clearFields = function() {
 
 $(document).ready(function)() {
   $("#start").click(function(event){
-    Benson = 1 Player (true);
-    Jackton = 2 Player (false);
+    Benson = Player (true);
+    Jackton = Player (false);
     $(".player-console").show();
     // $(".start-board").hide();
 
