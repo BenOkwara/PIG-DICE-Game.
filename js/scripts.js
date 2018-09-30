@@ -30,7 +30,7 @@ Player.prototype.Pass= function () {
   alert(this.hisName + "Hey you, handover to the next player. Your turn is over!")
 }
 
-Player.prototype.victor = function () {
+Player.prototype.Victor = function () {
   if (this.totalscore >=45) {
     alert(this.hisName + "BUMBA!! You the Winner!");
   }
@@ -44,24 +44,65 @@ Player.prototype.newGame = function () {
 }
 
 var clearFields = function() {
-  $(".ben").val("");
-  $(".Jac").val("");
+  $(".Benson").val("");
+  $(".Jackton").val("");
 }
 
 
 // ===========U I ==============>
 
 $(document).ready(function() {
+  
   $("#start").click(function(event){
-    Benson = Player (true);
-    Jackton = Player (false);
+    Benson = new Player (true);
+    Jackton = new Player (false);
     $(".player-console").show();
     // $(".start-board").hide();
 
-    player1.hisName = Benson;
-    player2.hisName = Jackton;
+    Benson.hisName = Benson;
+    Jackton.hisName = Jackton;
 
-    
-  })
+    var Benson = $(".Benson").val();
+    $("#ben").text(Benson); // checking /
+
+    var Jackton = $(".Jackton").val();
+    $("#Jac").text(Jackton); //checking //
+
+    Benson = new Player (true, Benson)
+  });
+  
+  $("button#new-game").click(function(event) {
+    $(".player-console").hide();
+    clearFields();
+    Benson.newGame();
+    Jackton.newGame();
+
+    $("#roll-1").empty();
+    $("#total-round-1").empty();
+    $("#total-score-1").empty();
+
+    $("#roll-2").empty();
+    $("#total-round-2").empty();
+    $("#total-score-2").empty();
+    // $(".start-board").show();//
+
+  });
+
+  $("button#ben-roll").click(function(event) {
+    Benson.roll = spindice();
+    $("roll-1").text(Benson.roll);
+    Benson.rollonce();
+    $("#total-round-1").text(Benson.turnscore);
+  });
+
+  $("button#Jac-roll").click(function(event) {
+    Jackton.roll = spindice();
+    $("roll-2").text(Jackton.roll);
+    Jackton.rollonce();
+    $("#total-round-2").text(Jackton.turnscore);
+  });
+
+
+
 
 }
